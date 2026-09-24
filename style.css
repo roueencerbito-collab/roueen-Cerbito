@@ -1,0 +1,65 @@
+ body {
+    background-color: #000000; /* Black background */
+    color: #ffffff;            /* White text */
+    font-family: serif;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 40px;
+    color: #ffffff;            
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #ff0000; 
+    color: #ffffff;            
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+
+.rotate {
+    animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+.scale {
+    animation: pulse 2s ease-in-out infinite alternate;
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(0.4);
+    }
+    to {
+        transform: scale(1.2);
+    }
+}
+
+.slide {
+    animation: move 2s ease-in-out infinite alternate;
+}
+
+@keyframes move {
+    from {
+        transform: translateX(0px);
+    }
+    to {
+        transform: translateX(150px);
+    }
+}
